@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Inter:wght@400;500&family=Kanit:wght@400;500;600&family=Montserrat:wght@400;500&family=Overpass:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@400;500&family=Kanit:wght@400;500;600&family=Montserrat:wght@400;500&family=Overpass:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
@@ -16,11 +16,26 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <p class="arrow__link">
-      <a href="#">
-        See how Fylo works
-        <img class="arrow__image" src="./images/icon-arrow.svg" alt="" />
-      </a>
-    </p>
+    <div class="testimonial">
+      <img src="./images/icon-quotes.svg" alt="" class="testimonial__quote" />
+      <p class="testimonial-content">
+        Fylo has improved our team productivity by an order of magnitude. Since
+        making the switch our team has become a well-oiled collaboration
+        machine.
+      </p>
+
+      <section class="user__testimonial">
+        <img
+          src="./images/avatar-testimonial.jpg"
+          alt=""
+          class="testimonial__user-avatar"
+        />
+
+        <div class="testimonial__user-profile">
+          <p class="testimonial__user-name">Kyle Burton</p>
+          <p class="testimonial__user-position">Founder & CEO, Huddle</p>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
