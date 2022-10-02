@@ -50,13 +50,59 @@ h2 {
 /* button */
 
 .btn {
-  padding: 1.5rem 6rem;
+  padding: 1.7rem 6rem;
+  border-radius: 3px;
 }
 
 .btn__secondary {
   background: var(--color-secondary);
   color: white;
   border: none;
+  transition: background 0.2s;
+}
+
+.btn__secondary:hover {
+  background: #6b9bff;
 }
 
 /* input */
+.form__input {
+}
+
+.form__input-email {
+  display: block;
+  padding: 1.7rem 2rem;
+  border-radius: 4px;
+  border: 1px solid #25234e;
+}
+
+.form__input-email:focus {
+  border-color: var(--color-secondary-hover);
+  box-shadow: 0 0 10px 2px #e7edfc;
+  outline: 0;
+}
+
+.form__input-emobile {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.form__input .btn__secondary {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .form__input-email {
+    display: inline;
+  }
+
+  .form__input-emobile {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .form__input .btn__secondary {
+    margin-left: 2rem;
+    width: 30%;
+  }
+}
