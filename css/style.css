@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #07043b;
+  --color-secondary: #2f65f9;
+  --color-secondary-hover: #6b9bff;
+  --color-white: white;
+  --font-overpass: "Overpass", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-kanit: "Kanit", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-heebo: "Heebo", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-montserrat);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-primary);
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-kanit);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.8rem;
+}
+
+/* button */
+
+.btn {
+  padding: 1.5rem 6rem;
+}
+
+.btn__secondary {
+  background: var(--color-secondary);
+  color: white;
+  border: none;
+}
+
+/* input */
