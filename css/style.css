@@ -348,7 +348,7 @@ i.fa-facebook {
   }
 
   .footer__logo {
-    white-space: wrap;
+    white-space: nowrap;
   }
   .footer__socials {
     justify-self: center;
