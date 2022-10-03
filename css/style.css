@@ -504,6 +504,8 @@ i.fa-facebook {
   background-size: cover;
   background-position: center;
   padding: 2rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .features__image {
