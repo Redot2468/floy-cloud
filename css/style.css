@@ -33,7 +33,7 @@ h2,
 h3 {
   font-family: var(--font-kanit);
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.2;
   color: var(--color-primary);
 }
 
@@ -83,7 +83,7 @@ h3 {
 
 .form__input-email:focus {
   border-color: var(--color-secondary-hover);
-  box-shadow: 0 0 10px 2px #e7edfc;
+  box-shadow: 0 0 10px 2px #5673bb;
   outline: 0;
 }
 
@@ -415,5 +415,86 @@ i.fa-facebook {
 
   .support .form__input {
     padding: 0 4rem;
+  }
+}
+
+/* banner */
+
+.hero__banner {
+  border: 2px solid green;
+  text-align: center;
+  padding: 3rem;
+}
+.hero__image {
+  width: 100%;
+}
+
+.hero-heading {
+  font-size: 3rem;
+}
+
+.hero__content {
+  margin-top: 3rem;
+}
+
+.hero__banner .form__input-email {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  border: 2px solid #b4b4b4;
+  box-shadow: 0 0 5px 0 rgb(221, 221, 221);
+}
+
+.form__input-email:focus {
+  border-color: var(--color-secondary-hover);
+  box-shadow: 0 0 10px 2px #ecedf0;
+  outline: 0;
+}
+
+.hero__banner .form__input-email::placeholder {
+  color: lightgray;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__banner {
+    max-width: 1440px;
+    margin: 0 auto;
+    grid-template-areas: "aside aside1";
+    text-align: left;
+  }
+
+  .hero-heading {
+    font-size: 3.3rem;
+  }
+
+  .hero__image {
+    grid-area: aside1;
+    width: 90%;
+    align-self: center;
+    border: 2px solid green;
+    justify-self: right;
+    margin-right: 0;
+  }
+  .hero__content {
+    border: 2px solid green;
+    align-self: center;
+    margin-left: 2rem;
+  }
+
+  .hero__description {
+    margin-bottom: 0;
+  }
+
+  .hero__banner .form__input-email {
+    margin-top: 1rem;
+    width: 60%;
+  }
+
+  .form__input {
+    border: 2px solid green;
+  }
+
+  .hero__content .btn {
+    padding: 1.7rem 4%;
+    white-space: nowrap;
   }
 }
