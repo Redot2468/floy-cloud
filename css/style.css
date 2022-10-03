@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   margin-bottom: 1.8rem;
 }
 
@@ -496,5 +496,79 @@ i.fa-facebook {
   .hero__content .btn {
     padding: 1.7rem 4%;
     white-space: nowrap;
+  }
+}
+
+/* features */
+.features {
+  border: 2px solid green;
+  text-align: center;
+}
+
+.features__background {
+  background: url(../images/bg-curve-mobile.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+}
+
+.features__image {
+  width: 95%;
+  border: 2px solid green;
+  margin: 6rem auto 1rem;
+}
+
+.features__content {
+  margin-top: 3rem;
+  border: 2px solid green;
+}
+
+.features__content .testimonial {
+  background-color: white;
+  text-align: left;
+  margin: 5rem 1rem 2rem;
+}
+
+.features__content .arrow__link {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    border: 2px solid green;
+    text-align: left;
+  }
+
+  .features__background {
+    background: url(../images/bg-curve-desktop.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-template-areas: "aside aside1";
+    padding: 4rem 2rem 10rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .features__image {
+    grid-area: aside1;
+    width: 95%;
+    align-self: center;
+    justify-self: right;
+  }
+
+  .features__content {
+    margin-top: 3rem;
+    border: 2px solid green;
+    padding-left: 2rem;
+  }
+
+  .features__content .testimonial {
+    background-color: white;
+    text-align: left;
+    margin: 5rem 3rem 2rem 0;
+  }
+
+  .features-description {
+    margin-right: 3rem;
   }
 }
