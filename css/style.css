@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: #535169;
+  color: white;
+}
 :root {
   --color-primary: #07043b;
   --color-secondary: #2f65f9;
@@ -280,10 +284,6 @@ h3 {
   padding-top: 5rem;
 }
 
-.grid > section {
-  border: 2px solid green;
-}
-
 .footer__contact {
   padding-left: 4rem;
 }
@@ -321,6 +321,9 @@ h3 {
 
 .footer__socials {
   justify-self: center;
+}
+.footer__socials ul {
+  padding-left: 0;
 }
 .footer__socials li {
   display: inline;
@@ -373,7 +376,7 @@ i.fa-facebook {
 
 .support {
   text-align: center;
-  border: 2px solid green;
+
   padding: 3rem 10% 7rem;
   background: #575989;
 }
@@ -403,7 +406,6 @@ i.fa-facebook {
   }
 
   .support-content {
-    border: 2px solid green;
     padding-left: 3rem;
     padding-right: 5rem;
     justify-self: left;
@@ -421,7 +423,6 @@ i.fa-facebook {
 /* banner */
 
 .hero__banner {
-  border: 2px solid green;
   text-align: center;
   padding: 3rem;
 }
@@ -470,12 +471,11 @@ i.fa-facebook {
     grid-area: aside1;
     width: 90%;
     align-self: center;
-    border: 2px solid green;
+
     justify-self: right;
     margin-right: 0;
   }
   .hero__content {
-    border: 2px solid green;
     align-self: center;
     margin-left: 2rem;
   }
@@ -489,10 +489,6 @@ i.fa-facebook {
     width: 60%;
   }
 
-  .form__input {
-    border: 2px solid green;
-  }
-
   .hero__content .btn {
     padding: 1.7rem 4%;
     white-space: nowrap;
@@ -501,8 +497,8 @@ i.fa-facebook {
 
 /* features */
 .features {
-  border: 2px solid green;
   text-align: center;
+  margin-top: 5rem;
 }
 
 .features__background {
@@ -514,13 +510,12 @@ i.fa-facebook {
 
 .features__image {
   width: 95%;
-  border: 2px solid green;
+
   margin: 6rem auto 1rem;
 }
 
 .features__content {
   margin-top: 3rem;
-  border: 2px solid green;
 }
 
 .features__content .testimonial {
@@ -535,7 +530,6 @@ i.fa-facebook {
 
 @media screen and (min-width: 768px) {
   .features {
-    border: 2px solid green;
     text-align: left;
   }
 
@@ -558,7 +552,7 @@ i.fa-facebook {
 
   .features__content {
     margin-top: 3rem;
-    border: 2px solid green;
+
     padding-left: 2rem;
   }
 
